@@ -16,4 +16,5 @@ include('zahid-routes.php');
 include('ubaid-routes.php');
 include('api-routes.php');
 include('sheraz-routes.php');
+include('yasir-routes.php');
 include('admin-routes.php');
