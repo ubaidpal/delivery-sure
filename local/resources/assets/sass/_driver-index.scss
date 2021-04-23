@@ -1,0 +1,140 @@
+.desc{
+	background:#ffffff; padding:40px 0px;
+	p{ color:#000000;}
+	
+	&.extra{ padding:130px 0px 30px;}
+}
+
+.what-it-takes{
+	background:#949494; color:#ffffff; padding: 20px 0px;
+	h1{ font-size:36px; color:#ffffff; margin: 10px 0px;}
+	table{ margin-top:20px;
+		th{ text-align:center;
+			&:first-child{ text-align:left;}
+		}
+		td{ text-align:center; vertical-align:middle !important;
+			span.req{ background:url(../images/check.svg) center center no-repeat; width:30px; height:25px; display:inline-block;}
+			&:first-child{text-align:left;}
+		}
+	}
+}
+
+.let-the-app{ padding:50px 0 0; background: #fff;}
+.content-side{ padding-top:160px;
+	h1{ color:#666666;}
+	p{ color:#000000;}
+}
+
+.deliver-when{ padding:20px 0 50px;  background: #fff;
+	h1{ color:#666666;}
+	h4{color:#666666; text-transform:uppercase;}
+	p{ color:#000000;}
+}
+
+.get-started{
+	padding:50px 0px; text-align:center;
+	
+	h1{ color:#666666; text-align:center; font-size:36px; margin: 0px 0 10px;}
+	p{ text-align:center;}
+	a.btn-green{ text-transform:uppercase; padding:10px 20px; min-width:160px;}
+}
+.signup{text-transform:uppercase; margin-top:15px; padding:10px 20px; min-width:160px;}
+
+.how-it{
+	background:#ffffff;
+	margin-top:-185px;
+}
+.pt250{ padding-top:250px;}
+.pb50{ padding-bottom:50px;}
+.choose-from{background:#ffffff;}
+
+.how-to-order{ position:relative; background:#77c720; color:#ffffff; padding: 20px 0px; min-height:520px;
+	h1{ font-size:36px; color:#ffffff; margin: 30px 0px;}
+	table{ margin-top:20px;
+		th{ text-align:center;
+			&:first-child{ text-align:left;}
+		}
+		td{ text-align:center; vertical-align:middle !important;
+			span.req{ background:url(../images/check.svg) center center no-repeat; width:30px; height:25px; display:inline-block;}
+			&:first-child{text-align:left;}
+		}
+	}
+	
+	.right-bg{ position:absolute; right:0; top:-64px;}
+}
+
+/* Index Retailer */
+.pb50{ padding-bottom:50px;}
+.pt50{ padding-top:50px;}
+.delivery-right{ min-height:522px;
+	background: #f9f9f9 url(../images/index-images/map_banner.jpg) left top no-repeat; overflow:hidden; 
+}
+
+.deliver-items{ text-align:center;
+	a{ text-transform:uppercase;}
+}
+
+
+.delivery-right-pnl{
+	position: relative;
+    background: #77c720;
+    color: #ffffff;
+    padding: 20px 0px;
+    min-height: 460px;
+	
+	h1{color:#ffffff;}
+	.pr{ position:relative;}
+	.mac-img{ position:absolute; left:0; top:-32px; width:893px;}
+}
+	
+
+
+
+
+
+/*Sign up images*/
+.signup-wrapper{    
+	background: url(../images/signup-bg.jpg) left top no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+	text-align:center;
+}	
+.signup-box{margin:70px 15px 0; background:#ffffff; box-shadow:0 0 2px #333333; border-radius:2px; display:inline-block; text-align: left;
+	form{ padding:0px 20px}
+	h1{ background:$green; color:$white; font-size:34px; padding:20px; margin:0 0 20px;}
+	.signup-form{ padding:0 20px;}
+	button{width: 93%; margin: 20px; box-sizing: border-box; text-transform: uppercase; padding: 12px 0px 10px; background:$green; color:$white;
+		&:hover{color:$white;}
+	}
+	p{ padding:0 20px 10px; 
+		a{color:#77c720;}
+	}
+	.form-group{ margin-bottom:15px !important;}
+}
+
+
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

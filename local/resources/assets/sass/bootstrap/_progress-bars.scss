@@ -1,0 +1,128 @@
+//
+// Progress bars
+// --------------------------------------------------
+
+
+// Bar animations
+// -------------------------
+
+// WebKit
+//@-webkit-keyframes progress-bar-stripes {
+//  from  { background-position: 40px 0; }
+//  to    { background-position: 0 0; }
+//}
+//
+//// Spec and IE10+
+//@keyframes progress-bar-stripes {
+//  from  { background-position: 40px 0; }
+//  to    { background-position: 0 0; }
+//}
+
+
+// Bar itself
+// -------------------------
+
+// Outer container
+.progress-bar-block {
+  position: relative;
+  //overflow: hidden;
+  height: 10px;
+  //margin-bottom: $line-height-computed;
+  background-color: $color-bg;
+  border-radius: 6px;
+  border: 1px solid $color-gray-light;
+  margin-top: 5px;
+  //@include box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
+}
+
+// Bar of progress
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 0%;
+  height: 1px;
+  //font-size: $font-size-small;
+  //line-height: $line-height-computed;
+  //color: $progress-bar-color;
+  //text-align: center;
+  background-color: $green;
+  //@include box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
+  //@include transition(width .6s ease);
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '|||';
+    display: block;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    padding: 1px 0 0 1px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid $color-gray-light;
+    border-radius: 2px;
+    background-color: white;
+    cursor: pointer;
+  }
+  &:before {
+    left: -1px;
+  }
+  &:after {
+    left: 100%;
+  }
+}
+
+// Striped bars
+//
+// `.progress-striped .progress-bar` is deprecated as of v3.2.0 in favor of the
+// `.progress-bar-striped` class, which you just add to an existing
+// `.progress-bar`.
+//.progress-striped .progress-bar,
+//.progress-bar-striped {
+//  @include gradient-striped;
+//  background-size: 40px 40px;
+//}
+
+// Call animation for the active one
+//
+// `.progress.active .progress-bar` is deprecated as of v3.2.0 in favor of the
+// `.progress-bar.active` approach.
+//.progress.active .progress-bar,
+//.progress-bar.active {
+//  @include animation(progress-bar-stripes 2s linear infinite);
+//}
+
+
+// Variations
+// -------------------------
+//
+//.progress-bar-success {
+//  @include progress-bar-variant($progress-bar-success-bg);
+//}
+//
+//.progress-bar-info {
+//  @include progress-bar-variant($progress-bar-info-bg);
+//}
+//
+//.progress-bar-warning {
+//  @include progress-bar-variant($progress-bar-warning-bg);
+//}
+//
+//.progress-bar-danger {
+//  @include progress-bar-variant($progress-bar-danger-bg);
+//}
+
+
+
+
+/* Progress-Bar Distance
+   ========================================================================== */
+.progress-bar-distance {
+  overflow: hidden;
+  margin-top: 5px;
+}

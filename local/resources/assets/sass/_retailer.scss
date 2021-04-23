@@ -1,0 +1,131 @@
+.retailer-theme{
+	.navbar-default .navbar-nav > li > a span::before{ color: $white; background-color: $blue;}
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{ color: $white; background-color: $blue;}
+	.profile-name { color: $blue;}
+  
+  // Success appears as green
+	.btn-green {
+	  @include button-variant($white, $blue, $blue);
+	
+	  &:hover {
+		color: $blue;
+	  }
+	}
+	
+	.list-group-green-header .list-group-item.active {
+   		border-bottom: 1px solid $blue;
+		a{color:$blue;}
+	}
+	
+	.c-hamburger--htla {
+  		background-color: $blue;
+	}
+	.addFav{
+		a{color:$blue;}
+	}
+	.search-icon{
+		&:hover i{color:$blue;}
+		&:focus{ background:none; box-shadow:none; color:$blue; border-color:#cccccc;}
+	}
+	.no-record{
+		a{color:$blue;}
+	}
+	.btn-link{ color:$blue; text-align:left;
+		&:focus{ background:none; color:$blue;}
+	}
+	
+	.send-msg{background-color: $blue;}
+	.h3g{color:$blue;}
+	.notification-item {
+	  padding: 10px 15px;
+	  cursor: pointer;
+	  line-height: 40px;
+	  
+		span a{color:$blue;}
+	  
+	  &.green {
+		background-color: $green-light;
+	  }
+	  &:hover {
+		background-color: $list-group-hover-bg;
+	  }
+	
+	}
+	.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{
+		background-color: $blue;
+    	border-color: $blue;	
+	}
+	
+	.action{
+		.dropdown-toggle{ color:$blue;}
+	}
+	.progress-pager-item.checklist.active{ background-color: $blue;}
+	.progress-pager-separator.active{background-color:$blue;}
+	.progress-pager-separator.active:before, .progress-pager-separator.active:after{background-color:$blue;}
+	.buyer-name a{color:$blue;}
+	.profile-wrapper .name_l .addFav a {
+    	color: $blue;
+	}
+	
+	.review-wrapper .tag-line{ color: $blue;}
+	
+	.reputaiton a.btn-orange:hover{color:$white !important;}
+	.buyer-detail .btn-orange{ color:$blue !important; border:1px solid $blue;
+		&:hover, &:focus{ background:$blue !important; color:$white; border:1px solid $blue}
+	}
+	.message-thread-item.unread {
+    	background-color: #e9f7fd;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Custom Button Css*/
+	.btn-orange{ background: none; color:$orange !important;
+		&:hover{ color:$white !important; background:$orange !important;}
+		&:focus{  background:$orange; border:1px solid $orange; box-shadow:none; color:$white !important;}
+	}
+	
+	.btn-green{ background: none; color:$blue !important; font-weight:normal !important;
+		&:hover{ color:$white !important; background:$blue !important;}
+		&:focus{  background:$blue; border:1px solid $blue !important; box-shadow:none; color:$white !important}
+	}
+	
+	.btn-white {
+		background: none; color:$blue !important; font-weight:normal !important; border:1px solid $blue;
+		&:hover{ color:$white !important; background:$blue !important;}
+		&:focus{  background:$blue; border:1px solid $blue !important; box-shadow:none; color:$white !important}
+	}
+}

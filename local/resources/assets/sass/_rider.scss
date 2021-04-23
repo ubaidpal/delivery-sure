@@ -1,0 +1,125 @@
+.rider-theme{
+	.navbar-default .navbar-nav > li > a span::before{ color: $white; background-color: $orange;}
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{ color: $white; background-color: $orange;}
+	.profile-name { color: $orange;}
+  
+  // Success appears as green
+	.btn-green {
+	  @include button-variant($white, $orange, $orange);
+	
+	  &:hover {
+		color: $orange;
+	  }
+	}
+	
+	.list-group-green-header .list-group-item.active {
+   		border-bottom: 1px solid $orange;
+		a{color:$orange;}
+	}
+	
+	.c-hamburger--htla {
+  		background-color: $orange;
+	}
+	.addFav{
+		a{color:$orange;}
+	}
+	.search-icon{
+		&:hover i{color:$orange;}
+		&:focus{ background:none; box-shadow:none; color:$orange;}
+	}
+	.no-record{
+		a{color:$orange;}
+	}
+	.btn-link{ color:$orange;}
+	
+	.send-msg{background-color: $orange;}
+	.h3g{color:$orange;}
+	.notification-item {
+	  padding: 10px 15px;
+	  cursor: pointer;
+	  line-height: 40px;
+	  
+		span a{color:$orange;}
+	  
+	  &.green {
+		background-color: #fff0e5;
+	  }
+	  &:hover {
+		background-color: $list-group-hover-bg;
+	  }
+	
+	}
+	
+	.total-earning-hover{ border: 1px solid $orange;
+		&:before,
+	  	&:after {
+			border-color: transparent transparent $orange transparent;
+	  	}
+	  &:after {  border-color: transparent transparent $white transparent;}
+	}
+	
+	.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{
+		background-color: $orange;
+    	border-color: $orange;	
+	}
+	.filter-dropdown .form-group label{ color:$orange;}
+	.categories-list-group .h3{ color:$orange;}
+	
+	.message-thread-item.unread {
+    	background-color: #fff0e5;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Custom Button Css*/
+	.btn-orange{ background: none; color:$orange !important;
+		&:hover{ color:$white !important; background:$orange !important;}
+		&:focus{  background:$orange; border:1px solid $orange; box-shadow:none; color:$white !important;}
+	}
+	
+	.btn-green{ background: none; color:$orange !important; font-weight:normal !important;
+		&:hover{ color:$white !important; background:$orange !important;}
+		&:focus{  background:$orange; border:1px solid $orange !important; box-shadow:none; color:$white !important}
+	}
+	
+	.btn-white {
+		background: none; color:$orange !important; font-weight:normal !important; border:1px solid $orange;
+		&:hover{ color:$white !important; background:$orange !important;}
+		&:focus{  background:$orange; border:1px solid $orange !important; box-shadow:none; color:$white !important}
+	}
+}

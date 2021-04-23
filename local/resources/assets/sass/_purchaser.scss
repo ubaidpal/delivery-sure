@@ -1,0 +1,125 @@
+.purchaser-theme{
+	.navbar-default .navbar-nav > li > a span::before{ color: $white; background-color: $green;}
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{ color: $white; background-color: $green;}
+	.profile-name { color: $green;}
+  
+  // Success appears as green
+	.btn-green {
+	  @include button-variant($white, $green, $green);
+	
+	  &:hover {
+		color: $green;
+	  }
+	}
+	
+	.list-group-green-header .list-group-item.active {
+   		border-bottom: 1px solid $green;
+		a{color:$green;}
+	}
+	
+	.c-hamburger--htla {
+  		background-color: $green;
+	}
+	.addFav{
+		a{color:$green;}
+	}
+	.search-icon{
+		&:hover i{color:$green;}
+		&:focus{ background:none; box-shadow:none; color:$green;}
+	}
+	.no-record{
+		a{color:$green;}
+	}
+	.btn-link{ color:$green;}
+	
+	.send-msg{background-color: $green;}
+	.h3g{color:$green;}
+	.notification-item {
+	  padding: 10px 15px;
+	  cursor: pointer;
+	  line-height: 40px;
+	  
+		span a{color:$green;}
+	  
+	  &.green {
+		background-color: $green-light;
+	  }
+	  &:hover {
+		background-color: $list-group-hover-bg;
+	  }
+	
+	}
+	
+	.total-earning-hover{ border: 1px solid $green;
+		&:before,
+	  	&:after {
+			border-color: transparent transparent $green transparent;
+	  	}
+	  &:after {  border-color: transparent transparent $white transparent;}
+	}
+	.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{
+		background-color: $green;
+    	border-color: $green;	
+	}
+	.action{
+		.dropdown-toggle{ color:$green;}
+	}
+	.buyer-name a{color:$green;}
+	
+	.buyer-detail .btn-orange{ color:$green !important; border:1px solid $green;
+		&:hover, &:focus{ background:$green !important; color:$white; border:1px solid $green}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Custom Button Css*/
+	.btn-orange{ background: none; color:$orange !important; border:1px solid $orange;
+		&:hover{ color:$white !important; background:$orange !important;}
+		&:focus{  background:$orange !important; border:1px solid $orange; box-shadow:none; color:$white !important;}
+	}
+	
+	.btn-green{ background: none; color:$green !important; font-weight:normal !important;
+		&:hover{ color:$white !important; background:$green !important;}
+		&:focus{  background:$green; border:1px solid $green !important; box-shadow:none; color:$white !important}
+	}
+	
+	.btn-white {
+		background: none; color:$green !important; font-weight:normal !important; border:1px solid $green;
+		&:hover{ color:$white !important; background:$green !important;}
+		&:focus{  background:$green; border:1px solid $green !important; box-shadow:none; color:$white !important}
+	}
+
+}

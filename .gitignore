@@ -1,0 +1,12 @@
+/vendor
+/node_modules
+/local/public/storage
+/local/public/vendor
+/local/public/js/mvc/mrb/public/img/
+Homestead.yaml
+Homestead.json
+/socket/node_modules
+.idea/
+.env
+/local/.env-local
+/.idea

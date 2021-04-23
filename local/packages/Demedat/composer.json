@@ -1,0 +1,12 @@
+{
+    "name": "demedat/admin",
+    "description": "\"Admin panel\"",
+    "authors": [
+        {
+            "name": "Muhammad Yasir",
+            "email": "yasir9398@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

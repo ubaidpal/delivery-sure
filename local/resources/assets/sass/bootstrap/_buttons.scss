@@ -1,0 +1,361 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  @include user-select(none);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+    @include opacity(.65);
+    @include box-shadow(none);
+  }
+
+  &.btn-yellow {
+    background-color: $yellow;
+    color: $white;
+  }
+  &.btn-red {
+    background-color: $red;
+    color: $white;
+  }
+}
+
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+  }
+}
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+
+// Info appears as blue-green
+.btn-gray {
+  @include button-variant($gray, $white, $gray);
+  font-weight:normal !important;
+  text-transform:uppercase;
+  
+  &:hover {
+    color: $white; background:$gray;
+  }
+}
+// Warning appears as orange
+.btn-blue {
+  @include button-variant($blue, $white, $blue);
+}
+// Danger and error appear as red
+.btn-orange {
+  @include button-variant($white, $orange, $orange);
+}
+
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link {
+  font-weight: normal !important;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  text-decoration: underline;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+}
+.btn-sm {
+  line-height: 22px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0 10px;
+}
+.btn-xs {
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+}
+
+
+// Block button
+// --------------------------------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+
+/* BTN Center Block
+   ========================================================================== */
+.btn-center-block {
+  text-align: center;
+}
+
+/* BTN Container
+   ========================================================================== */
+.btn-container {
+
+  .btn {
+    margin-bottom: 10px;
+
+    + .btn {
+      margin-left: 5px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sider Button - Animating CSS-Only Hamburger Icons
+   ========================================================================== */
+.c-hamburger {
+  position: fixed;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 1001;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 14px;
+    right: 14px;
+    height: 3px;
+    background: white;
+
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      content: "";
+    }
+  }
+  span::before {
+    top: -6px;
+  }
+  span::after {
+    bottom: -6px;
+  }
+}
+
+.c-hamburger--htla {
+  span {
+    transition: transform 0.3s;
+
+    &:before {
+      transform-origin: top right;
+      transition: transform 0.3s, width 0.3s, top 0.3s;
+    }
+    &:after {
+      transform-origin: bottom right;
+      transition: transform 0.3s, width 0.3s, bottom 0.3s;
+    }
+  }
+
+  &:hover {
+    //background-color: #18903c;
+
+    span {
+      transform: rotate(180deg);
+
+      &:before {
+        width: 50%;
+        top: -3px;
+        left: -25px;
+        transform: translateX(38px) translateY(4px) rotate(45deg);
+      }
+      &:after {
+        width: 50%;
+        bottom: -3px;
+        left: -25px;
+        transform: translateX(38px) translateY(-4px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.c-hamburger--htra {
+  background-color: #ff9650;
+
+  span {
+    transition: transform 0.3s;
+
+    &:before {
+      transform-origin: top left;
+      transition: transform 0.3s, width 0.3s, top 0.3s;
+    }
+    &:after {
+      transform-origin: bottom left;
+      transition: transform 0.3s, width 0.3s, bottom 0.3s;
+    }
+  }
+
+  &:hover {
+    background-color: #e95d00;
+
+    span {
+      transform: rotate(180deg);
+
+      &:before {
+        width: 50%;
+        top: -2px;
+        left: 4px;
+        transform: translateX(-8px) translateY(4px) rotate(-45deg);
+      }
+      &:after {
+        width: 50%;
+        bottom: -2px;
+        left: 4px;
+        transform: translateX(-8px) translateY(-4px) rotate(45deg);
+      }
+    }
+  }
+}
+
+
+
+
+
+/* ToolTip
+   ========================================================================== */
+.toltip {
+  content: ' ? ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border: 2px solid $green;
+  border-radius: 50%;
+  overflow: hidden;
+  color:$green;
+  font-size:18px;
+  line-height:18px;
+}
