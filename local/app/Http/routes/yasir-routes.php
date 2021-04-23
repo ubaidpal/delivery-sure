@@ -1,10 +1,10 @@
 <?php
 /**
- * Created by   :  Muhammad Yasir
+ * Created by   :  ubaid
  * Project Name : demedat
  * Product Name : PhpStorm
  * Date         : 10-Jun-16 2:55 PM
- * File Name    : yasir-routes.php
+ * File Name    : ubaid-routes.php
  */
 Route::group(['middleware' => ['auth', 'data']], function () {
 
